@@ -3,26 +3,15 @@ using namespace std;
 
 int main()
 {
-    int first_number, second_number; 
-    int sum, difference, product, quotient, remainders;
+    int celcius; 
+    int farenheit;
     
-    cout<<"Enter the first number: ";
-    cin >> first_number;
-    cout<<"Enter the second number: ";
-    cin >> second_number;
+    cout<<"Enter the temperature in Celsius: ";
+    cin >> celcius;
+
+    farenheit = (celcius * 9/5) + 32;
     
-    sum = first_number + second_number;
-    difference = first_number - second_number;
-    product = first_number * second_number;
-    quotient = first_number / second_number;
-    remainders = first_number % second_number;
-    
-    cout<<"Sum: " << sum << endl;
-    cout<<"Difference: " << difference << endl;
-    cout<<"Product: " << product << endl;
-    cout<<"Quotient: " << quotient << endl;
-    cout<<"Remainder: " << remainders;
-    
-    
+    cout << celcius << " Celcius is equal to " << farenheit << " Farenheit";
+
     return 0;
 }
